@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-transform: capitalize;
+  font-size: 23px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #1a1a1a;
+}
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+  font-weight: 500;
+}
+
+.header .navbar .navbar__link a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.header .navbar .navbar__link a:hover {
+  color: #ffb703;
+}
+
+.header .navbar .navbar__form input {
+  background: none;
+  border: none;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.header .navbar .navbar__form input:focus {
+  background: #fff;
+}
+
+.header .navbar .navbar__form .btn__search {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header .navbar .navbar__form .btn__search:hover {
+  color: #ffb703;
+}
+
+@media (max-width: 600px) {
+  .navbar__form input {
+    display: none;
+  }
+  .navbar__form input.active {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=stayle.css.map */
