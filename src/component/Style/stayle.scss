@@ -19,6 +19,7 @@ $gold: #ffb703;
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 2%;
 }
 .header {
   background: $color1;
@@ -59,10 +60,49 @@ $gold: #ffb703;
   }
 }
 
-.home{
-  
+.banner__slide {
+  position: relative;
+  img {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .liner__gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(90deg, #000, rgba(26, 26, 26, 0));
+    height: 100%;
+    width: 60%;
+    z-index: 2;
+  }
+  .banner__desc {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    z-index: 3;
+    .banner__tile {
+      color: $white;
+      margin-bottom: 50px;
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .banner__trailer a {
+      background-color: $white;
+      border-radius: 4px;
+      font-size: 17px;
+      padding: 16px 40px;
+      color: $color1;
+      font-weight: 500;
+      display: inline-block;
+      margin-right: 30px;
+      i {
+        font-size: 16px;
+      }
+    }
+  }
 }
-
 
 @media (max-width: 600px) {
   .navbar__form {

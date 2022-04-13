@@ -15,6 +15,7 @@
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 2%;
 }
 
 .header {
@@ -61,6 +62,57 @@
 
 .header .navbar .navbar__form .btn__search:hover {
   color: #ffb703;
+}
+
+.banner__slide {
+  position: relative;
+}
+
+.banner__slide img {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.banner__slide .liner__gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000), to(rgba(26, 26, 26, 0)));
+  background-image: linear-gradient(90deg, #000, rgba(26, 26, 26, 0));
+  height: 100%;
+  width: 60%;
+  z-index: 2;
+}
+
+.banner__slide .banner__desc {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  z-index: 3;
+}
+
+.banner__slide .banner__desc .banner__tile {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.banner__slide .banner__desc .banner__trailer a {
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 17px;
+  padding: 16px 40px;
+  color: #1a1a1a;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.banner__slide .banner__desc .banner__trailer a i {
+  font-size: 16px;
 }
 
 @media (max-width: 600px) {
