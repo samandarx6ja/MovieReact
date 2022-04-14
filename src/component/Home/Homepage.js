@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
+import Movie from './Movie'
 
 const data = [
   {
@@ -24,12 +25,12 @@ const Homepage = () => {
   return (
     <div className="home">
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
-        navigation
+        loop
+        autoplay={{ delay: 5000 }}
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
@@ -37,6 +38,7 @@ const Homepage = () => {
           <SwiperSlide key={item.id}>
             <div className="banner__slide">
               <img src={item.img} alt="" />
+              <div className="liner__gradient"></div>
               <div className="liner__gradient"></div>
               <div className="banner__desc">
                 <div className="banner__tile">{item.title}</div>
@@ -50,9 +52,7 @@ const Homepage = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="container">
-        <h1>HomePage</h1>
-      </div>
+      <Movie />
     </div>
   )
 }
