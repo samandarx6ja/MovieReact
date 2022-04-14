@@ -71,7 +71,7 @@
 }
 
 .banner__slide img {
-  width: 100%;
+  width: 110%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -85,14 +85,14 @@
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#1a1a1a));
   background-image: linear-gradient(180deg, transparent, #1a1a1a);
   height: 20vh;
-  width: 100%;
+  width: 110%;
   z-index: 2;
 }
 
 .banner__slide .banner__desc {
   position: absolute;
   bottom: 10%;
-  left: 5%;
+  left: 2%;
   z-index: 3;
 }
 
@@ -121,6 +121,26 @@
 
 .movie {
   background: #1a1a1a;
+}
+
+.movie .movie__title h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.movie .movie__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.movie .movie__slide img {
+  width: 206px;
 }
 
 @media (max-width: 600px) {

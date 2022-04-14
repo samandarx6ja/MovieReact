@@ -1,7 +1,10 @@
-
-const Series = () => {
+import React from "react"
+const Series = (props) => {
+  console.log(props)
   return (
-    <div>Series</div>
+    <div>
+      12
+    </div>
   )
 }
 
