@@ -2,38 +2,9 @@ import React from 'react'
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import DB from '../db/db.json'
 
 const Movie = () => {
-  const data = [
-    {
-      id: 1,
-      img: 'https://bqte9svezmi4.merlincdn.net//i/posters/1615',
-    },
-    {
-      id: 2,
-      img: 'https://bqte9svezmi4.merlincdn.net//i/posters/1596',
-    },
-    {
-      id: 3,
-      img: 'https://bqte9svezmi4.merlincdn.net//i/posters/1599',
-    },
-    {
-      id: 4,
-      img: 'https://bqte9svezmi4.merlincdn.net//i/posters/1624',
-    },
-    {
-      id: 5,
-      img: 'https://bqte9svezmi4.merlincdn.net//i/posters/1610',
-    },
-    {
-      id: 6,
-      img: 'https://bqte9svezmi4.merlincdn.net//i/posters/1611',
-    },
-    {
-      id: 7,
-      img: 'https://bqte9svezmi4.merlincdn.net//i/posters/1612',
-    },
-  ]
   return (
     <div className="movie">
       <div className="movie__title container">
@@ -52,24 +23,30 @@ const Movie = () => {
           onSlideChange={() => console.log('slide change')}
           breakpoints={{
             0: {
+              width: 208,
               slidesPerView: 1,
+              spaceBetween: 15
             },
             // when window width is >= 640px
             640: {
+              width: 508,
+              spaceBetween: 20,
               slidesPerView: 2,
             },
             // when window width is >= 768px
             768: {
               width: 708,
               slidesPerView: 3,
-              spaceBetween: 30,
+              spaceBetween: 60,
             },
           }}
         >
-          {data.map((item) => (
+          {DB.map((item) => (
             <SwiperSlide>
-              <Link to="/series" >
-                <img src={item.img} alt="" />
+              <Link to={`/series/${item.id}`} key={item.id}>
+                <div className='poster'>
+                  <img src={item.img} alt="" />
+                </div>
               </Link>
             </SwiperSlide>
           ))}

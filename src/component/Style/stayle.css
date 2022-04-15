@@ -147,8 +147,5 @@
   .navbar__form input {
     display: none;
   }
-  .navbar__form input.active {
-    display: inline-block;
-  }
 }
 /*# sourceMappingURL=stayle.css.map */
