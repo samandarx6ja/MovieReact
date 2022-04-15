@@ -11,14 +11,15 @@ const Movie = () => {
         <h1>Movies</h1>
       </div>
       <div className="movie__slide">
+        <div className='slide__overleft'></div>
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           navigation
-          // autoplay={{ delay: 2000 }}
           centeredSlides
           grabCursor
           loop
+          scrollbar={{ draggable: true }}
           pagination={{ clickable: true }}
           onSlideChange={() => console.log('slide change')}
           breakpoints={{
@@ -37,7 +38,7 @@ const Movie = () => {
             768: {
               width: 708,
               slidesPerView: 3,
-              spaceBetween: 60,
+              spaceBetween: 130,
             },
           }}
         >
@@ -51,6 +52,7 @@ const Movie = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className='slide__overight'></div>
       </div>
     </div>
   )
