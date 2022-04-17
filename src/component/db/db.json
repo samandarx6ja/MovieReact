@@ -1,38 +1,46 @@
 [
   {
     "id": "1",
-    "img": "/img/10.jpg",
-    "title": "description"
+    "img": "https://bqte9svezmi4.merlincdn.net//i/posters/1615",
+    "title": "Mahkum",
+    "banner": "https://tejedd76pluu.merlincdn.net//Programlar/Mahkum/Mahkum-cover-photo-1e95aa69-6521-4524-8f59-66395ef0a612.jpg"
   },
   {
     "id": "2",
-    "img": "/img/1596.jpg",
-    "title": "description"
+    "img": "https://bqte9svezmi4.merlincdn.net//i/posters/1596",
+    "title": "Fulya ile Umudun Olsun",
+    "banner":"https://tejedd76pluu.merlincdn.net//Programlar/Fulya-ile-Umudun-Olsun/Fulya-ile-Umudun-Olsun-cover-photo-cc99a640-5f79-4baa-b272-832e1616be9d.jpg"
     
   },
   {
     "id": "3",
-    "img": "/img/1599.jpg",
-    "title": "description"
+    "img": "https://bqte9svezmi4.merlincdn.net//i/posters/1599",
+    "title": "En Hamarat Benim",
+    "banner":"https://tejedd76pluu.merlincdn.net//Programlar/En-Hamarat-Benim/En-Hamarat-Benim-cover-photo-bae7373c-85ec-4be6-84f5-cbd427e5a315.jpg",
+    "video":"/video/Hamarat.ts"
   },
   {
     "id": "4",
-    "img": "/img/1610.jpg",
-    "title": "description"
+    "img": "https://bqte9svezmi4.merlincdn.net//i/posters/1610",
+    "title": "Evlilik Hakkinda Her Sey ",
+    "banner": "https://tejedd76pluu.merlincdn.net//Programlar/Evlilik-Hakkinda-Her-Sey/Evlilik-Hakkinda-Her-Sey-cover-photo-1a0efa1d-cfbd-4059-9ebc-c30640b96f44.jpg"
   },
   {
     "id": "5",
-    "img": "/img/1611.jpg",
-    "title": "description"
+    "img": "https://www.fox.com.tr/i/posters/1611",
+    "title": "Yalancilar ve Mumlari",
+    "banner":"https://tejedd76pluu.merlincdn.net//Programlar/Yalancilar-ve-Mumlari/Yalancilar-ve-Mumlari-cover-photo-ec60f23d-145c-4c6d-98a8-03392ad2ad7f.jpg"
   },
   {
     "id": "6",
-    "img": "/img/1612.jpg",
-    "title": "description"
+    "img": "https://bqte9svezmi4.merlincdn.net//i/posters/1365",
+    "title": "Cagla ile Yeni Bir Gun",
+    "banner":"https://tejedd76pluu.merlincdn.net//Programlar/Cagla-ile-Yeni-Bir-Gun/Cagla-ile-Yeni-Bir-Gun-cover-photo-abb6119e-00cc-4bb9-8260-bb86c95bbbf4.jpg"
   },
   {
     "id": "7",
-    "img": "/img/1624.jpg",
-    "title": "description"
+    "img": "https://bqte9svezmi4.merlincdn.net//i/posters/1624",
+    "title": "Son Nefesime Kadar",
+    "banner":"https://tejedd76pluu.merlincdn.net//Programlar/Son-Nefesime-Kadar/Son-Nefesime-Kadar-cover-photo-1b4cceed-80aa-4480-9b33-ebf963f0ac80.jpg"
   }
 ]

@@ -11,22 +11,22 @@ const Movie = () => {
         <h1>Movies</h1>
       </div>
       <div className="movie__slide">
-        <div className='slide__overleft'></div>
+        {/* <div className='slide__overleft'></div> */}
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          navigation
           centeredSlides
           grabCursor
           loop
-          scrollbar={{ draggable: true }}
-          pagination={{ clickable: true }}
+          navigation
+          autoplay={{ delay: 3000 }}
+          // scrollbar={{ draggable: true }}
           onSlideChange={() => console.log('slide change')}
           breakpoints={{
             0: {
-              width: 208,
+              width: 258,
               slidesPerView: 1,
-              spaceBetween: 15
+              spaceBetween: 40,
             },
             // when window width is >= 640px
             640: {
@@ -45,14 +45,14 @@ const Movie = () => {
           {DB.map((item) => (
             <SwiperSlide>
               <Link to={`/series/${item.id}`} key={item.id}>
-                <div className='poster'>
+                <div className="poster">
                   <img src={item.img} alt="" />
                 </div>
               </Link>
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className='slide__overight'></div>
+        {/* <div className='slide__overight'></div> */}
       </div>
     </div>
   )
